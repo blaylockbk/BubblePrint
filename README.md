@@ -1,4 +1,4 @@
-# 💬 Balloon Print
+# 💬 Bubble Print
 
 Give your print statements personality.
 
