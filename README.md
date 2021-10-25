@@ -10,4 +10,4 @@ bprint('I have a whale of a tale for you.', messenger="🐳", color="blue", widt
 bprint("Here is a website:\nhttps://docs.python.org/3/library/textwrap.html", width=None)
 ```
 
-![](https://raw.githubusercontent.com/BubblePrint/BubblePrint/master/docs/images/bubbleprint.png)
+![](https://github.com/blaylockbk/BubblePrint/blob/main/images/bprint_demo.png?raw=true)
