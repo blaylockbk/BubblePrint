@@ -12,9 +12,12 @@ _color = dict(
     purple="\033[95m",
 )
 
-def bprint(message, messenger="👷🏻‍♂️", width=70, color=None, align='left'):
+
+def bprint(message, messenger="😀", width=70, color=None, align="left"):
     """Bubble Print"""
-    assert color in _color or color is None, f"color must be None or one of {list(_color)}"
+    assert (
+        color in _color or color is None
+    ), f"color must be None or one of {list(_color)}"
     assert align in _align, f"align must be one of {list(_align)}"
 
     if width is None:
@@ -49,13 +52,23 @@ def bprint(message, messenger="👷🏻‍♂️", width=70, color=None, align='
     if color is not None:
         print("\033[0m")
 
+
 if __file__ == "__main__":
 
     long_str = "I'm going to tell you a lot of information in this message, so please read this full message."
 
-    bprint('Hello World!')
-    bprint("Hello World, I'm over here!", width=30, align='right')
-    bprint('Hello World!', messenger="Me", width=30, align='center')
-    bprint('I have a whale of a tale for you.', messenger="🐳", color="blue", width=15, align='center')
+    bprint("Hello World!")
+    bprint("Hello World, I'm over here!", width=30, align="right")
+    bprint("Hello World!", messenger="Me", width=30, align="center")
+    bprint(
+        "I have a whale of a tale for you.",
+        messenger="🐳",
+        color="blue",
+        width=15,
+        align="center",
+    )
     bprint(long_str, width=None, color="red")
-    bprint("Here is a website:\nhttps://docs.python.org/3/library/textwrap.html", width=None)
+    bprint(
+        "Here is a website:\nhttps://docs.python.org/3/library/textwrap.html",
+        width=None,
+    )
