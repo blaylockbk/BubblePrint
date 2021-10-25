@@ -8,7 +8,7 @@
 <!-- (Badges) -->
 </div>
 
-Give your print statements personality. Print dialoge in speach bubbles.
+Give your print statements personality. Print dialogue in speech bubbles.
 
 ```python
 from bubbleprint import bprint
